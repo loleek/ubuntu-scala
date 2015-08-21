@@ -14,7 +14,7 @@ ENV PATH		$SCALA_HOME/bin:$SBT_HOME/bin:$PATH
 
 RUN apt-get install -y openjdk-7-jdk
 
-RUN apt-get install wget  && rm -rf /var/lib/apt/lists/*
+RUN apt-get install -y wget  && rm -rf /var/lib/apt/lists/*
 
 RUN wget http://www.scala-lang.org/files/archive/scala-$SCALA_VERSION.tgz && \
     tar -xzf /scala-$SCALA_VERSION.tgz -C /usr/local/ && \
